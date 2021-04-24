@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(200, 236, 238);
+}
+.hder{
+    text-align: center;
+}
+#focim{
+    font-size: 350%;
+    text-decoration: underline;
+    margin: 0;
+}
+#alcim{
+    margin-bottom: 25px;
+    margin-top: 0%;
+}
+#cim{
+    border: 5px solid black;
+}
+a{
+    text-decoration: none;
+    color:red;
+}
+a:hover{
+    color:rgb(0, 0, 0);
+}
+.logo>img{
+    width: 1700px;
+    height: 140px;
+}
+nav>table{
+    border:1px solid black;
+    padding: 5px;
+    width: 90%;
+}
+#parent>th{
+    padding:5px;
+    margin:5px;
+}
+#Szekciocim{
+    text-decoration: underline;
+}
+#macik{
+    margin:0px 15% 0px 0px;
+    border:1px solid black;
+}
+#macisor>th, #macisor>td{
+    border:1px solid black;
+}
+.profile{
+    width:35%;
+    margin:0px 0px 0px 30%;
+}
+.kor{
+    text-align: center;
+}

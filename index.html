@@ -4,31 +4,25 @@
         - Alignokat css-ben rendesen megcsinálni
         - Még valami bődületes hülyeséget csinálni
         - Táblázat igényes formázása css
-        - Logo rendes méretezése css
-
-    - Készen van
-        - Legyen kész az oldal váza
-        - html fájlok közötti hivatkozás működjön
-        - szemantiaki blokkok
-        - felsorolás
-        - táblázat
-        - extra html fájlok az oldalra látogató lehülyézésvel
-        - Ellenőrizni, hogy működik e az oldalon belüli hivatkozás
--->
+        - Logo rendes méretezése css-->
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>BearMate</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="js/script.js"></script>
     </head>
 
     <body>       
         <header class="hder">
             <!--A Tanár Úr azt mondta, csak japán csápos pornó nem lehet. Úgyhogy medve társkereső lesz-->
-            <h1>BearMate</h1>
-            <h4>A maci az új pali</h4>
-            <p>
+            <span id="cim">
+                <h1 id="focim">BearMate</h1>
+                <h4 id="alcim">A maci az új pali</h4>
+            </span>
+            <p id="promoszoveg">
                 Ha vonzó és erős nőnek érzi magát, de nem szerencsés a társkeresésben, akkor ez az oldal ÖNNEK való. Hagyja a megszokott kapcsolati modellt. 
                 Itt igazi medvék keresnek életreszóló társat. Bővebben az oldal történetéről <a href="html\history.html">itt</a>, vagy kezdj <a href="#Szekciocim">ismerkedni</a> most.
             </p>
@@ -37,11 +31,9 @@
             </div>
     
         </header>
-        <hr>
-
         <nav class="topnav">
-            <table id="navigationbar">
-                <tr>
+            <table id="navigationbar" align="center">
+                <tr id="parent">
                     <th><a href="html\profil.html">Profil</a></th>
                     <th><a href="html\kredit.html">Kredit</a></th>
                     <th><a href="html\csevego.html">Csevego</a></th>
@@ -49,8 +41,6 @@
                 </tr>
             </table>
         </nav>
-        <hr>
-
         <section class="aboutUs">
             <p>
                <ol>
@@ -108,24 +98,33 @@
             <div id="Szekciocim">
                 <h2>Most online medvék</h2>
             </div>
-            <table>
-                <tr>
+            <table id="macik">
+                <tr id="macisor">
                     <th>Név</th>
                     <th>Életkor</th>
                     <th>Mottó</th>
                     <th>Profilkép</th>
+                    <th>Küldj neki üzenetet</th>
                 </tr>
-                <tr>
-                    <td>Medve László</td>
-                    <td>11</td>
+                <tr id="macisor">
+                    <td id="nev1">Medve László</td>
+                    <td class="kor">11</td>
                     <td>"Egy két jó falat csak akad" - Balu</td>
-                    <td><img src="img\ml.jpg" alt="a kép helye"></td>
+                    <td><img src="img\ml.jpg" alt="a kép helye" class="profile"></td>
+                    <td>
+                        <input type="text" id="message1">
+                        <button onclick="message1()">Küldés</button>
+                    </td>
                 </tr>
-                <tr>
-                    <td>Grizzly Kálmán</td>
-                    <td>9</td>
+                <tr id="macisor">
+                    <td id="nev2">Grizzly Kálmán</td>
+                    <td class="kor">9</td>
                     <td>Sosem lehet elég fiatalon kezdeni</td>
-                    <td><img src="img\fbear.jpg" alt="a kép helye"></td>
+                    <td><img src="img\fbear.jpg" alt="a kép helye" class="profile"></td>
+                    <td>
+                        <input type="text" id="message2">
+                        <button onclick="message2()">Küldés</button>
+                    </td>
                 </tr>
             </table>
         </section>
